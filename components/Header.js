@@ -30,7 +30,9 @@ const getDay = () => {
   const todayDate = today.getDate();
   const todayDay = today.getDay();
   const todayMonth = today.getMonth();
-  return `${dayArray[todayDay]} ${todayDate}. ${monthArray[todayMonth]}`;
+  return `${dayArray[todayDay - 1]} ${todayDate}. ${monthArray[
+    todayMonth - 1
+  ]}`;
 };
 
 const Header = () => (
